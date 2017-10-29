@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+</head>
+<body>
+<h1>Length converter</h1>
+<p>Consumes a simple SOAP service using the PHP class
+    <a href="http://php.net/manual/en/class.soapclient.php">SoapClient</a>
+</p>
+
+
+<h2>Functions</h2>
+<ol>
+    {% for func in functions %}
+        <li>{{ func }}</li>
+    {% endfor %}
+</ol>
+
+<h2>Types</h2>
+<ol>
+    {% for type in types %}
+        <li>{{ type }}</li>
+    {% endfor %}
+</ol>
+{{ types[1][0] }}
+Result {{ result }}
+</body>
+</html>
